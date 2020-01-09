@@ -44,12 +44,12 @@ J, Theta1, Theta2 = extras.cost(Theta1,
 
 
 #---------------------------------------------------#
-#load ronak's image:
+#load image:
 
 from PIL import Image
 import PIL.ImageOps
 
-im = Image.open('5.png').convert('L')
+im = Image.open('test.png').convert('L')
 im = im.resize((28, 28), Image.ANTIALIAS)
 im = PIL.ImageOps.invert(im)
 
